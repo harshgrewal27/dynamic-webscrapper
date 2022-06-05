@@ -1,0 +1,50 @@
+{% extends 'home.html' %}
+{% block body %}
+
+
+    
+<div class="container my-4">
+
+    <form action="/" , method="POST">
+        <div class="mb-3 my-4">
+          <label for="item" class="form-label ">Enter the item to search</label>
+          <input type="text" class="form-control" name="item" id="item" >
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="flexCheckDefault"  name="excel">
+          <label class="form-check-label" for="flexCheckDefault" >Do you want to save data as excel file</label>
+        </div>
+        
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+      </form>
+      {% if items|length==0 %}
+      <div class="alert alert-success my-3" role="alert">
+        No items in table!!
+      </div>
+        
+      {% else %}
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sno</th>
+            <th scope="col">Title</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in items %}
+          <tr>
+            <th scope="row">{{loop.index}}</th>
+            <td>{{item.name}}</td>
+            <td>{{item.rating}}</td>
+            <td>{{item.price}}</td>
+          </tr>
+          {% endfor %}
+          
+        </tbody>
+      </table>
+      {% endif %}
+      
+</div>
+{% endblock body %}

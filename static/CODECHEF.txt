@@ -1,0 +1,16 @@
+https://www.codechef.com/users/harshgrewal27
+<h1 class="h2-style">Harsh grewal</h1>
+<span class="rating" style="display: inline-block; 
+                    font-size: 10px; 
+                    background: #3366CC;
+                    padding: 0 3px; 
+                    line-height: 1.3; 
+                    color: white;
+                    margin-right: 2px;">3★</span>
+<div class="rating-number">1660</div>
+
+
+
+https://www.codechef.com/ratings/all?filterBy=Institution%3DGL%20Bajaj%20Institute%20of%20Technology%20and%20Management&itemsPerPage=15&order=asc&page=1&sortBy=global_rank
+
+<span class="m-username--link">pawan6300</span>
